@@ -1,6 +1,6 @@
 const launchDate = new Date("March 14, 2026 10:00:00").getTime();
 
-const countdown = setInterval(function () {
+const timer = setInterval(function () {
 
 const now = new Date().getTime();
 const distance = launchDate - now;
@@ -17,8 +17,7 @@ document.getElementById("seconds").innerHTML = seconds;
 
 if (distance < 0) {
 
-clearInterval(countdown);
-
+clearInterval(timer);
 document.querySelector(".countdown").innerHTML = "Website Live";
 
 }
