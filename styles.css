@@ -64,7 +64,6 @@ body {
   justify-content: space-between;
   padding: 18px 32px;
   background: #FFF6EA;
-  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.25);
   z-index: 20;
 }
 
@@ -119,23 +118,35 @@ body {
   max-width: 540px;
 }
 
-.contact-btn {
-  margin-top: 8px;
+.contact-btn,
+.outline-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 52px;
   padding: 10px 28px;
-  color: #fff;
-  background: #0B60F5;
   border-radius: 999px;
   text-decoration: none;
   font-weight: 600;
   letter-spacing: 0.04em;
   border: 1px solid rgba(0, 0, 0, 0.1);
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-  box-shadow: 0 16px 30px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s ease;
+  white-space: nowrap;
+}
+
+.contact-btn {
+  color: #fff;
+  background: #0B60F5;
 }
 
 .contact-btn:hover {
   transform: translateY(-1px);
-  box-shadow: 0 20px 35px rgba(0, 0, 0, 0.25);
+}
+
+.outline-btn {
+  background: transparent;
+  color: #0B60F5;
+  border-color: #0B60F5;
 }
 .hero-actions {
   display: flex;
@@ -144,22 +155,9 @@ body {
   flex-wrap: wrap;
 }
 
-.outline-btn {
-  padding: 10px 28px;
-  border-radius: 999px;
-  border: 1px solid #0B60F5;
-  background: transparent;
-  color: #0B60F5;
-  text-decoration: none;
-  font-weight: 600;
-  letter-spacing: 0.04em;
-  transition: background 0.2s ease, color 0.2s ease;
-}
-
 .outline-btn:hover {
   background: #0B60F5;
   color: #fff;
-  box-shadow: 0 16px 30px rgba(0, 0, 0, 0.2);
 }
 
 .gallery-header {
@@ -174,7 +172,6 @@ body {
   overflow: hidden;
   border: 1px solid rgba(0, 0, 0, 0.08);
   position: relative;
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12);
   aspect-ratio: 4 / 3;
   display: flex;
   align-items: center;
@@ -213,7 +210,6 @@ body {
   border: 1px solid rgba(0, 0, 0, 0.08);
   padding: 26px 18px;
   text-align: center;
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12);
 }
 
 .detail-heading {
@@ -253,7 +249,6 @@ footer {
   text-align: center;
   width: 100%;
   background: #FFF6EA;
-  box-shadow: 0 -6px 15px rgba(0, 0, 0, 0.08);
 }
 
 .footer-icon {
@@ -299,7 +294,6 @@ footer p {
   flex-direction: column;
   align-items: center;
   gap: 12px;
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12);
 }
 
 .team-photo {
@@ -351,7 +345,6 @@ footer p {
   border-radius: 32px;
   padding: 32px;
   border: 1px solid rgba(0, 0, 0, 0.08);
-  box-shadow: 0 35px 80px rgba(0, 0, 0, 0.18);
 }
 
 .hero-text {
@@ -406,7 +399,6 @@ footer p {
   width: 100%;
   border-radius: 28px;
   border: 1px solid rgba(0, 0, 0, 0.08);
-  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.25);
   object-fit: contain;
   min-height: 280px;
 }
@@ -417,7 +409,6 @@ footer p {
   border-radius: 28px;
   padding: 32px;
   border: 1px solid rgba(0, 0, 0, 0.08);
-  box-shadow: 0 25px 55px rgba(0, 0, 0, 0.18);
 }
 
 .about-services h2,
@@ -490,7 +481,6 @@ footer p {
   border-radius: 28px;
   padding: 32px;
   border: 1px solid rgba(0, 0, 0, 0.08);
-  box-shadow: 0 35px 80px rgba(0, 0, 0, 0.18);
 }
 
 .contact-grid {
@@ -504,7 +494,6 @@ footer p {
   border-radius: 26px;
   background: #fff;
   border: 1px solid rgba(0, 0, 0, 0.08);
-  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.18);
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -560,7 +549,6 @@ footer p {
   border-radius: 32px;
   overflow: hidden;
   border: 1px solid rgba(0, 0, 0, 0.12);
-  box-shadow: 0 40px 70px rgba(0, 0, 0, 0.25);
   position: relative;
   background: #FFF6EA;
 }
@@ -583,7 +571,6 @@ footer p {
   padding: 18px 26px;
   border-radius: 28px;
   background: rgba(255, 255, 255, 0.18);
-  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.25);
   backdrop-filter: blur(18px);
   color: #fff;
   border: 1px solid rgba(255, 255, 255, 0.4);
@@ -676,7 +663,6 @@ footer p {
   background: #FFF6EA;
   color: #0B60F5;
   text-align: center;
-  box-shadow: 0 40px 90px rgba(0, 0, 0, 0.28);
 }
 
 .nav-content a {
